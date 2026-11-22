@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>KnisVPN サポート / Support</title><link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<nav><a href="../">Knis Apps</a> › KnisVPN</nav>
+<h1>KnisVPN サポート</h1>
+<p class="lead">iOS / iPadOS 向け WireGuard クライアント(自分の VPN サーバーへの接続を 1 タップで切り替え、接続状態をウィジェット・コントロールセンター・Dynamic Island に表示)</p>
+
+<div class="card"><strong>入手</strong><br>App Store での配信準備中です(iOS / iPadOS 18 以降、無料)。
+このアプリは非公開配信のため App Store の検索には表示されません。公開後はこのページのリンクから入手してください。</div>
+
+<div class="card"><strong>ご利用の前に</strong><br>
+本アプリは VPN サービスを提供しません。接続先の WireGuard サーバーと、その設定(conf ファイルまたは QR コード)は利用者自身でご用意ください。</div>
+
+<h2>お問い合わせ</h2>
+<p>不具合の報告・ご質問・ご要望は <a href="mailto:knishis.dev@gmail.com">knishis.dev@gmail.com</a> までお送りください。
+ご利用の機種、OS バージョン、症状(接続できない / ウィジェットが更新されない など)を添えていただくと調査がスムーズです。秘密鍵を含む設定ファイルは送らないでください。</p>
+
+<h2>よくある質問</h2>
+<div class="card"><strong>トンネルを追加するには</strong><br>
+右上の「+」から、QR コードの読み取り・conf ファイルの取り込み・貼り付けのいずれかで WireGuard の設定を登録します。
+初回は iOS が「VPN 構成の追加」の許可を求めます。「許可」を選び、パスコードを入力してください。</div>
+<div class="card"><strong>「VPN 構成の追加が許可されませんでした」と表示されます</strong><br>
+許可のダイアログで「許可しない」を選んだか、パスコードの入力を中止した場合に表示されます。もう一度「登録」を押してください。</div>
+<div class="card"><strong>ウィジェットやコントロールを置くには</strong><br>
+ホーム画面またはロック画面の編集で「KnisVPN」のウィジェットを追加します。コントロールセンターの編集では「KnisVPN」のコントロールを追加できます。
+操作の対象は、アプリでチェックを付けたトンネルです。</div>
+<div class="card"><strong>「接続中」なのに通信できません</strong><br>
+ウィジェットの「接続中」はトンネルが開いた状態を表します。サーバーとの通信が成立しているかは、アプリ画面の「最終ハンドシェイク」でご確認ください。
+「まだありません」のままの場合は、サーバーのアドレス・公開鍵・サーバー側のピア登録をご確認ください。</div>
+<div class="card"><strong>自動接続とは</strong><br>
+オンにすると、指定した Wi-Fi(自宅など)につながっている間は切断し、それ以外の Wi-Fi やモバイル通信では自動で接続します。
+手動で切断すると一時停止し、次に手動で接続すると再開します。</div>
+<div class="card"><strong>Dynamic Island の表示が消えます</strong><br>
+iOS の制限で、表示は約 8 時間で終了します。アプリを開くと再表示されます。</div>
+<div class="card"><strong>秘密鍵はどこに保存されますか</strong><br>
+端末内の iOS キーチェーンにのみ保存され、外部には送信されません。詳しくは <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</div>
+
+<hr>
+<h1>KnisVPN Support</h1>
+<p class="lead">WireGuard client for iOS and iPadOS: switch the tunnel to your own VPN server with one tap, and see its state in a widget, Control Center and the Dynamic Island</p>
+<div class="card"><strong>Download</strong><br>App Store release is being prepared (iOS / iPadOS 18 or later, free). The app is distributed as an unlisted app, so it does not appear in App Store search.</div>
+<div class="card"><strong>Before you start</strong><br>
+The App does not provide a VPN service. You need your own WireGuard server and its configuration (a conf file or QR code).</div>
+<h2>Contact</h2>
+<p>For bug reports, questions, or feature requests, email <a href="mailto:knishis.dev@gmail.com">knishis.dev@gmail.com</a>.
+Please include your device model, OS version and the symptom. Do not send configuration files that contain a private key.</p>
+<h2>FAQ</h2>
+<div class="card"><strong>How do I add a tunnel?</strong><br>
+Tap "+" and scan a QR code, import a conf file, or paste the configuration. The first time, iOS asks for permission to add a VPN configuration; choose Allow and enter your passcode.</div>
+<div class="card"><strong>How do I add the widget or the control?</strong><br>
+Add the KnisVPN widget from the Home Screen or Lock Screen editor, and the KnisVPN control from the Control Center editor. They operate the tunnel that is checked in the App.</div>
+<div class="card"><strong>It says "Connected" but nothing loads</strong><br>
+"Connected" means the tunnel is up. Check "Latest handshake" in the App to see whether the server is answering; if there is none, check the server address, public key and the peer entry on the server.</div>
+<div class="card"><strong>What is Auto-connect?</strong><br>
+When enabled, the tunnel is disconnected while you are on the Wi-Fi networks you list (for example at home) and connected automatically on any other Wi-Fi or on cellular.</div>
+<div class="card"><strong>Where is my private key stored?</strong><br>
+Only in the iOS Keychain on your device. It is never sent to the developer or any third party. See the <a href="privacy.html">Privacy Policy</a>.</div>
+<footer>© Kazuyuki Nishisaka</footer>
+</main></body></html>
